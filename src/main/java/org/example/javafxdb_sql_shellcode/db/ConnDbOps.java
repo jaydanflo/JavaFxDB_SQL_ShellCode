@@ -17,7 +17,7 @@ import java.sql.Statement;
  */
 public class ConnDbOps {
     final String MYSQL_SERVER_URL = "jdbc:mysql://localhost/";
-    final String DB_URL = "jdbc:mysql://localhost/DBname";
+    final String DB_URL = MYSQL_SERVER_URL + "DBname";
     final String USERNAME = "admin";
     final String PASSWORD = "password";
     
