@@ -11,16 +11,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- *
- * @author MoaathAlrajab
- */
+
 public class ConnDbOps {
-    final String MYSQL_SERVER_URL = "jdbc:mysql://localhost/";
-    final String DB_URL = "jdbc:mysql://localhost/DBname";
-    final String USERNAME = "admin";
-    final String PASSWORD = "password";
-    
+    final String MYSQL_SERVER_URL = "jdbc:mysql://csc311florianserver.mysql.database.azure.com:3306/";
+    final String DB_URL = MYSQL_SERVER_URL + "userdb?useSSL=true&requireSSL=true";
+    final String USERNAME = "jaydanflorian";
+    final String PASSWORD = "Farm123$";
+
+
     public  boolean connectToDatabase() {
         boolean hasRegistredUsers = false;
 
